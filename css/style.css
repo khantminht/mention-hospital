@@ -68,7 +68,88 @@ body{
 .banners3{
     background-image: url("../assets/img/banner/banner6.jpg");
 }
+
+.btn-blues{
+    color: #fff;
+    background-color: darkblue;
+}
 /* End Banner Section */
+
+
+/* Start Features SEctione */
+.iconboxes{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    padding: 50px 20px;
+
+    position: relative;
+}
+
+.icons{
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background-color: lightseagreen;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: calc(50% - 35px);
+    top: -35px;
+
+    transition: all 0.3s;
+}
+
+.feature-texts{
+    overflow: hidden;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.iconboxes:hover .icons{
+    background-color: #fff;
+    color: lightseagreen;
+    border: 2px solid lightseagreen;
+}
+
+.iconboxes:hover .feature-texts{
+    transform: scale(1.05);
+}
+/* End Features Section */
+
+/* Start Info SEction */
+.fromlefts{
+    animation: myleft 3s;
+}
+
+.fromrights{
+    animation: myright 3s;
+}
+
+@keyframes myleft {
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes myright {
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* End Info section */
 
 
 /* End Header */
