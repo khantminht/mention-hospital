@@ -74,7 +74,7 @@ body{
     background-color: darkblue;
 }
 /* End Banner Section */
-
+/* End Header */
 
 /* Start Features SEctione */
 .iconboxes{
@@ -151,6 +151,97 @@ body{
 }
 /* End Info section */
 
+/* Start Adv SEction */
+.advs{
+    height: 300px;
+    color: #fff;
+    text-shadow: -5px 0 10px #000;
 
-/* End Header */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ), url("../assets/img/banner/banner1.jpg");
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+}
+
+/* End Adv Section */
+
+/* Start Department Section*/
+.deptboxes{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.3s;
+}
+
+.deptboxes img{
+    width: 100%;
+    object-fit: cover;
+
+    transition: all 0.3s;
+}
+
+.deptboxes .contents{
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+
+    position: absolute;
+    left: 10%;
+    bottom: -85%;
+
+    transition: all 0.3s;
+}
+
+.deptboxes a{
+    background-color: steelblue;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+
+    display: inline-block;
+    
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.deptboxes:hover .contents{
+    width: 100%;
+    height: 53%;
+
+    left: 0;
+    bottom: 0;
+}
+
+.deptboxes:hover a{
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.deptboxes:hover img{
+    transform: scale(1.2);
+}
+
+.deptboxes:hover h3{
+    color: steelblue;
+  
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.deptboxes:hover p{
+    width: 80%;
+    margin: auto;
+}
+/* End Department SEction */
