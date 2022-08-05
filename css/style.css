@@ -305,7 +305,6 @@ body{
 .pricingcards:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     transform: translateY(-20px);
-    padding-bottom: 40px;
 }
 
 .pricingcards:hover .pricingheaders{
@@ -331,7 +330,7 @@ body{
 
 @keyframes movefromleft {
     from{
-        transform: translateX(-100px);
+        transform: translateX(-50px);
         opacity: 0;
     }to{
         transform: translateX(0);
@@ -341,7 +340,7 @@ body{
 
 @keyframes movefromright {
     from{
-        transform: translateX(100px);
+        transform: translateX(50px);
         opacity: 0;
     }to{
         transform: translateX(0);
@@ -359,3 +358,69 @@ body{
     }
 }
 /* End Pricing SEction */
+
+
+/* Start Join Us SEction */
+.customerforms{
+    background-color: #fff;
+    border: 1px solid #dddd;
+    padding: 30px;
+}
+
+/* End Join Us SEction */
+
+
+/* Start Footer SEction */
+.socailicons a{
+    color: #fff;
+    border: 1px solid #f4f4f4;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.socailicons a:hover{
+    background-color: blue;
+}
+
+.footerlinks{
+    color: #eee;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footerlinks:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+}
+/* End Footer SEcion */
+
+/* Start Progress */
+#progress{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+   display: grid;
+   place-items: center;
+   z-index: 10;
+}
+
+.progressvalues{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+
+    display: grid;
+    place-items: center;
+}
+/* End Progress */
