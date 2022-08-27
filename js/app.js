@@ -139,13 +139,30 @@ $(document).ready(function(){
     // End Progress
 
 
+// Start Myself Modal SEction
 
+var getscrollheight = $(document).height();
+// console.log(getscrollheight);
 
+var getclientheight = $(window).height();
+// console.log(getclientheight);
 
+var calcheight = getscrollheight - getclientheight;
+// console.log(calcheight);
 
+$(window).scroll(function(){
+var getscrolltop = Math.floor($(this).scrollTop());
 
+// console.log(calcheight);
+// console.log(getscrolltop);
 
+    if(getscrolltop == calcheight){
+        $("#myself").modal('show');
+    }else{
+        $("#myself").modal('hide');
+    }
+});
+// End Myself Modal SEction
 
-
-    
-})
+ 
+});

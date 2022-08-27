@@ -2,7 +2,13 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
+
+    padding: 0;
+    margin: 0;
 }
+
+a{ text-decoration: none;}
+
 
 /* Start Header */
 
@@ -424,3 +430,84 @@ body{
     place-items: center;
 }
 /* End Progress */
+
+/* -------------------------------Start Myself SEction------------------------------- */
+#myself{
+    padding: 0;
+    margin: 0;
+}
+
+.profilebox{
+    color: #f1f1f1;
+    font-family: arial;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+
+    text-transform: uppercase;
+}
+
+.profilecard{
+    height: 100px;
+    position: relative;
+}
+
+#line{
+    width: 90%;
+    display: inline-block;
+    place-items: center;
+    border-bottom: 1px dashed #555;
+}
+
+.profilephotos{
+    display: block;
+    border: 10px solid #f4f4f4;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+}
+
+.profilecontents{
+    width: 90%;
+    border-top: 1px dashed #555;
+    border-bottom: 1px dashed #555;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.profiletexts{
+    color: #000;
+    letter-spacing: 1px;
+    padding-top: 40px;
+}
+
+.profiletexts > .h5{
+    text-transform: none;
+    display: block;
+    margin-top: 30px;
+
+}
+
+.profilecontents > a{
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.profilecontents > a:hover{
+    color: #000;
+}
+
+.profileicons{
+    color: #555;
+    transition: all 0.2s;
+}
+
+.profileicons:hover{
+    color: #111;
+}
+
+/* -------------------------------End Myself SEction------------------------------- */
